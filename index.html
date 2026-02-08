@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Foody</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: #efeae7;
+  padding: 30px;
+}
+.container {
+  background: #f6f3f1;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: #c0392b;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: #c0392b;
+}
+.signup {
+  background: #c0392b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.hero-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  margin-bottom: 25px;
+}
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+.btn-primary {
+  background: #c0392b;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+.btn-secondary {
+  background: #fff;
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.hero-image img {
+  width: 380px;
+  border-radius: 50%;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  margin-top: 60px;
+}
+.products a {
+  text-decoration: none;
+  color: inherit;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+}
+.card img {
+  width: 140px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.price {
+  color: #c0392b;
+  font-weight: 500;
+  margin-top: 8px;
+}
+footer {
+  margin-top: 70px;
+  padding-top: 25px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <nav>
+    <div class="logo">Foody</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="signup">Sign Up</button>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-text">
+      <h1>it’s not just<br>Food, It’s an<br>Experience.</h1>
+      <div class="hero-buttons">
+        <button class="btn-primary">View Menu</button>
+        <button class="btn-secondary">Book A Table</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="food.jpg" alt="Food">
+    </div>
+  </div>
+
+  <div class="products">
+
+    <a href="pappardle.html">
+      <div class="card">
+        <img src="food1.jpg" alt="">
+        <h4>Pappardle</h4>
+        <small>Classic Italian Pasta</small>
+        <div class="price">$35.00</div>
+      </div>
+    </a>
+
+    <a href="ravioli.html">
+      <div class="card">
+        <img src="food2.jpg" alt="">
+        <h4>Ravioli Stuffed</h4>
+        <small>With Pesto Sauce</small>
+        <div class="price">$35.00</div>
+      </div>
+    </a>
+
+    <a href="hamburger.html">
+      <div class="card">
+        <img src="food3.jpg" alt="">
+        <h4>Hamburger</h4>
+        <small>Juicy Beef Patty</small>
+        <div class="price">$30.00</div>
+      </div>
+    </a>
+
+    <a href="salad.html">
+      <div class="card">
+        <img src="food4.jpg" alt="">
+        <h4>Salad</h4>
+        <small>Fresh & Healthy</small>
+        <div class="price">$25.00</div>
+      </div>
+    </a>
+
+    <a href="fries.html">
+      <div class="card">
+        <img src="food5.jpg" alt="">
+        <h4>French Fries</h4>
+        <small>Crispy & Golden</small>
+        <div class="price">$20.00</div>
+      </div>
+    </a>
+
+  </div>
+
+  <footer>
+    © 2026 Foody — Created by <strong>Mark D. Devera</strong>
+  </footer>
+
+</div>
+
+</body>
+</html>

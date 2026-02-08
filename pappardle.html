@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pappardle</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+body {
+  background:#efeae7;
+  padding:30px;
+}
+.container {
+  max-width:1000px;
+  margin:auto;
+  background:#f6f3f1;
+  padding:40px;
+  border-radius:25px;
+}
+.header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:40px;
+}
+.header h1 {
+  font-family:'Playfair Display',serif;
+  color:#c0392b;
+  font-size:42px;
+}
+.home-btn {
+  background:#c0392b;
+  color:#fff;
+  padding:10px 22px;
+  border-radius:20px;
+  text-decoration:none;
+  font-size:14px;
+}
+.image-card {
+  background:#fff;
+  padding:20px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+  margin-bottom:40px;
+}
+.image-card img {
+  width:260px;
+  border-radius:20px;
+  cursor:pointer;
+  transition:transform .3s ease;
+}
+.image-card img:hover {
+  transform:scale(1.05);
+}
+.section {
+  margin-bottom:30px;
+}
+.section h3 {
+  margin-bottom:10px;
+  color:#c0392b;
+}
+ul, ol {
+  margin-left:20px;
+  line-height:1.8;
+}
+.source {
+  margin-top:40px;
+  font-size:14px;
+  text-align:center;
+}
+.source a {
+  color:#c0392b;
+  text-decoration:none;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <h1>Pappardle</h1>
+    <a href="index.html" class="home-btn">← Home</a>
+  </div>
+
+  <div class="image-card">
+    <a href="https://ph.pinterest.com/pin/433964114098815950/" target="_blank">
+      <img src="food1.jpg" alt="Pappardle">
+    </a>
+    <p>Click the image to watch the cooking video</p>
+  </div>
+
+  <div class="section">
+    <h3>Ingredients</h3>
+    <ul>
+      <li>Pappardelle pasta</li>
+      <li>Olive oil</li>
+      <li>Garlic</li>
+      <li>Tomato sauce</li>
+      <li>Salt and pepper</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>Procedure</h3>
+    <ol>
+      <li>Boil the pasta according to package instructions.</li>
+      <li>Sauté garlic in olive oil.</li>
+      <li>Add tomato sauce and season.</li>
+      <li>Mix pasta with sauce and serve hot.</li>
+    </ol>
+  </div>
+
+  <div class="source">
+    Source: <a href="https://www.allrecipes.com" target="_blank">https://www.allrecipes.com</a>
+  </div>
+
+</div>
+
+</body>
+</html>
